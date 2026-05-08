@@ -35,7 +35,7 @@ msisdnSubmitBtn.addEventListener("click", async (event) => {
         });
 
         if (isAlreadySubscribed(checkSub)) {
-            showMessage("error", response?.message || "You are already subscribed.");
+            showMessage("error", checkSub?.message || "You are already subscribed.");
             return;
         }
 
