@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAG+ Plus Subscription Flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2 class="logo">MAG<span>+</span><em>plus</em></h2>
+
+    <p class="top-text">Only two more steps to access the content.</p>
+
+    <div class="steps">
+        <div class="step">
+            <div class="circle gray">1</div>
+            <small>Enter site</small>
+        </div>
+
+        <div class="step active">
+            <div class="circle blue">2</div>
+            <small>Click Continue</small>
+        </div>
+
+        <div class="step">
+            <div class="circle gray">3</div>
+            <small>Subscribe</small>
+        </div>
+    </div>
+
+    <div class="progress-line">
+        <span></span>
+        <span class="active-dot"></span>
+        <span></span>
+    </div>
+
+    <div id="message" class="message hidden"></div>
+
+    <div class="hand">☟</div>
+
+    <div id="msisdnSection">
+        <p class="main-text">Enter your mobile number<br>to access the content</p>
+
+        <div class="msisdn-group">
+            <div class="country-box">🇰🇼 +965</div>
+            <input type="text" id="msisdn" maxlength="8" placeholder="0124567" autocomplete="off">
+        </div>
+
+        <button type="submit" id="msisdnSubmitBtn">CONTINUE</button>
+    </div>
+
+    <div id="pinSection" class="hidden">
+        <p class="main-text">Enter the PIN received on your mobile<br>to access the content</p>
+
+        <div id="pinInputs">
+            <input maxlength="1" class="pin-box" inputmode="numeric">
+            <input maxlength="1" class="pin-box" inputmode="numeric">
+            <input maxlength="1" class="pin-box" inputmode="numeric">
+            <input maxlength="1" class="pin-box" inputmode="numeric">
+        </div>
+
+        <button type="submit" id="pinSubmitBtn">CONFIRM</button>
+    </div>
+
+    <div id="tqSection" class="hidden">
+        <h2>You are successfully subscribed! 🎉</h2>
+    </div>
+
+    <div class="price">$5.500 / Weekly</div>
+
+    <p class="terms">
+        By clicking "Continue", you declare that you have read and accepted the Terms
+        and Conditions. Weekly subscription with automatic renewal until cancellation.
+    </p>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
